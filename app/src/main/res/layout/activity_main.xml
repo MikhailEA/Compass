@@ -8,11 +8,12 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvDegree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/black"
         android:text="Hello World!"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -26,15 +27,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tvDegree"
         app:srcCompat="@drawable/img_compass_dinamic" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivStatic"
         android:layout_width="350dp"
         android:layout_height="350dp"
-        app:srcCompat="@drawable/img_compass_static"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="249dp" />
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivDinamic"
+        app:layout_constraintEnd_toEndOf="@+id/ivDinamic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivDinamic"
+        app:layout_constraintTop_toTopOf="@+id/ivDinamic"
+        app:srcCompat="@drawable/img_compass_static" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
