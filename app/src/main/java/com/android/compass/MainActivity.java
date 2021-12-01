@@ -59,8 +59,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         ivDinamic.startAnimation(ra);
         curret_degree = -degree;
 
-        )
-
     }
 
     @Override
